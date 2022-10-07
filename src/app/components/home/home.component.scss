@@ -1,0 +1,12 @@
+.accueil-titre {
+  padding: auto;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/img/bg/carousel1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  .message {
+    margin: 0 auto;
+  }
+}
