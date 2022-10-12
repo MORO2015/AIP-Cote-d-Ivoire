@@ -13,6 +13,7 @@ import { FormationComponent } from './components/formation/formation.component';
 import { ConseilComponent } from './components/conseil/conseil.component';
 import { FinanceComponent } from './components/finance/finance.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { ArchivesComponent } from './components/archives/archives.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     FormationComponent,
     ConseilComponent,
     FinanceComponent,
-    LoadingComponent
+    LoadingComponent,
+    ArchivesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+.bg {
+  background-color: rgb(250, 253, 249);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  align-items: center;
+}
+.image-service {
+  border-radius: 15px;
+}
+.texte {
+  width: 85%;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.material-symbols-outlined {
+  color: green;
+}
+.btn-primary {
+  justify-content: center;
+}
+
+// clignoté le texte bouton
+
+.blink {
+  -webkit-animation: 2s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0
+  animation: 2s linear infinite condemed_blink_effect;
+}
+@-webkit-keyframes condemed_blink_effect {
+  // pour Safari 4.0-8.0
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes condemed_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
