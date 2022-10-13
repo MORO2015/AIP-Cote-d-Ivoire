@@ -17,7 +17,7 @@ export class BarNavComponent implements OnInit {
       .pipe(filter((url: any) => url instanceof NavigationEnd))
       .subscribe((url: any) => {
         console.log(url);
-        if (url.urlAfterRedirects != '/home') {
+        if (url.urlAfterRedirects != 'home') {
           this.hidDen = false;
         }
       });

@@ -1,54 +1,77 @@
 <!-- Navbar Start -->
-<div class="container sticky-top bg-dark px-0 wow fadeIn">
-  <div
-    class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex"
+<nav
+  class="navbar container navbar-expand-lg bg-dark py-lg-0 px-lg-5 wow fadeIn sticky-top"
+  data-wow-delay="0.1s"
+>
+  <a routerLink="home" class="navbar-brand ms-4 ms-lg-0">
+    <img src="assets/img/logo/aip_logo.svg" alt="" srcset="" />
+  </a>
+  <button
+    type="button"
+    class="navbar-toggler me-4"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
   >
-    <nav
-      class="navbar navbar-expand-lg bg-dark py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img src="assets/img/logo/aip_logo.svg" alt="" srcset="" />
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+      <a
+        class="nav-item nav-link active"
+        routerLink="home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >ACCUEIL</a
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a class="nav-item nav-link active" href="/home">ACCUEIL</a>
-          <a href="/propos" class="nav-item nav-link">NOUS SOMMES</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >NOS SOLUTIONS</a
-            >
-            <div class="dropdown-menu m-0">
-              <a href="/conseil" class="dropdown-item">Conseil</a>
-              <a href="" class="dropdown-item">Formation</a>
-              <a href="" class="dropdown-item">Recherche de financement</a>
-            </div>
-          </div>
-          <a href="/archives" class="nav-item nav-link">ARCHIVES</a>
-        </div>
-        <div class="d-none d-lg-flex ms-2">
-          <a class="btn btn-outline-primary py-2 px-3" href="/contact">
-            Contactez nous
-            <div
-              class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-            >
-              <i class="fa fa-arrow-right"></i>
-            </div>
-          </a>
+      <a routerLink="propos" class="nav-item nav-link" routerLinkActive="active"
+        >NOUS SOMMES</a
+      >
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          >NOS SOLUTIONS</a
+        >
+        <div class="dropdown-menu m-0">
+          <a
+            routerLink="conseil"
+            class="dropdown-item"
+            routerLinkActive="active"
+            >Conseil</a
+          >
+          <a
+            routerLink="formation"
+            class="dropdown-item"
+            routerLinkActive="active"
+            >Formation</a
+          >
+          <a
+            routerLink="finance"
+            class="dropdown-item"
+            routerLinkActive="active"
+            >Recherche de financement</a
+          >
         </div>
       </div>
-    </nav>
+      <a
+        routerLink="archives"
+        class="nav-item nav-link"
+        routerLinkActive="active"
+        >ARCHIVES</a
+      >
+    </div>
+    <div class="d-none d-lg-flex ms-2">
+      <a
+        class="btn btn-outline-primary py-2 px-3"
+        routerLink="contact"
+        routerLinkActive="active"
+      >
+        Contactez nous
+        <div
+          class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+        >
+          <i class="fa fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
   </div>
-  <!-- Navbar End -->
-</div>
+</nav>
+<!-- Navbar End -->

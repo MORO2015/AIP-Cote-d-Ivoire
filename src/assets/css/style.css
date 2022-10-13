@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-  --primar: #ff6f0f;
+  --primar: orangered;
+  --seconda: rgb(14, 14, 198);
   --secondary: #fff0e6;
   --light: #f8f8f9;
   --dark: #001d23;
@@ -35,18 +36,17 @@
 }
 
 .btn.btn-outline-primary {
-  color: var(--primar);
+  color: var(--seconda);
 }
 
-.btn.btn-primary,
+/* .btn.btn-primary,
 .btn.btn-outline-primary:hover {
   color: #ffffff;
-  background-color: var(--primar) !important;
-  border-color: var(--primar) !important;
-}
+  background-color:  !im  border-color: var(--primar) !important;
+} */
 
 .btn.btn-primary:hover {
-  color: var(--primary) !important;
+  color: var(--primar) !important;
   background: transparent;
 }
 
@@ -102,10 +102,10 @@
   outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+/* .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
-}
+} */
 
 @media (max-width: 991.98px) {
   .navbar .navbar-nav {

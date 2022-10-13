@@ -4,7 +4,7 @@
     class="accueil-titre w-100 d-flex align-items-center justify-content-center"
   >
     <div class="message text-center">
-      <h2 class="text-white">
+      <h2 class="text-white fw-bold">
         <a
           href=""
           class="typewrite text-white text-decoration-none"
@@ -81,7 +81,10 @@
               financement en passant par le renforcement des capacités du
               dirigeant.
             </p>
-            <a class="btn btn-outline-primary py-2 px-3" href="">
+            <a
+              class="btn btn-outline-primary py-2 px-3"
+              (click)="onRedirectionPropos()"
+            >
               En savoir plus de nous
               <div
                 class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-1"

@@ -19,34 +19,17 @@
 }
 .btn-primary {
   justify-content: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
 }
-
-// clignoté le texte bouton
-
-.blink {
-  -webkit-animation: 2s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0
-  animation: 2s linear infinite condemed_blink_effect;
-}
-@-webkit-keyframes condemed_blink_effect {
-  // pour Safari 4.0-8.0
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-@keyframes condemed_blink_effect {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
+.bouton {
+  margin: O auto;
+  text-align: center;
+  color: white;
+  :hover {
+    color: dark;
+    cursor: pointer;
   }
 }
