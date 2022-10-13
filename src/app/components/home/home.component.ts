@@ -18,4 +18,12 @@ export class HomeComponent implements OnInit {
   onRedirectionConseil() {
     this.router.navigateByUrl('conseil');
   }
+
+  onRedirectionFormation() {
+    this.router.navigateByUrl('formation');
+  }
+
+  onRedirectionFinance() {
+    this.router.navigateByUrl('finance');
+  }
 }

@@ -10,6 +10,7 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 import { ProposComponent } from './components/propos/propos.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'conseil', component: ConseilComponent },
