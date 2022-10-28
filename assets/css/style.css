@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-  --primar: #ff6f0f;
+  --primar: #ff4500;
+  --seconda: rgb(14, 14, 198);
   --secondary: #fff0e6;
   --light: #f8f8f9;
   --dark: #001d23;
@@ -35,18 +36,17 @@
 }
 
 .btn.btn-outline-primary {
-  color: var(--primar);
+  color: var(--seconda);
 }
 
-.btn.btn-primary,
+/* .btn.btn-primary,
 .btn.btn-outline-primary:hover {
   color: #ffffff;
-  background-color: var(--primar) !important;
-  border-color: var(--primar) !important;
-}
+  background-color:  !im  border-color: var(--primar) !important;
+} */
 
 .btn.btn-primary:hover {
-  color: var(--primary) !important;
+  color: orangered !important;
   background: transparent;
 }
 
@@ -102,10 +102,10 @@
   outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+/* .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
-}
+} */
 
 @media (max-width: 991.98px) {
   .navbar .navbar-nav {
@@ -184,7 +184,7 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
   background: linear-gradient(rgba(0, 29, 35, 0.8), rgba(0, 29, 35, 0.8)),
-    url(../img/carousel-1.jpg) center center no-repeat;
+    center center no-repeat;
   background-size: cover;
 }
 
@@ -217,7 +217,7 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  background: var(--primary);
+  background: orangered;
   color: #ffffff;
 }
 
@@ -269,7 +269,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070f4;
+  background-color: blue;
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -280,7 +280,7 @@
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #4070f4;
+  background-color: blue;
 }
 .overlay::after {
   border-radius: 0 25px 0 0;
@@ -299,7 +299,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4070f4;
+  border: 4px solid;
 }
 .name {
   font-size: 18px;
@@ -316,14 +316,14 @@
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: #4070f4;
+  background-color: orangered;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button:hover {
-  background: #265df2;
+  background: orangered;
 }
 
 .swiper-navBtn {
@@ -331,7 +331,7 @@
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover {
-  color: #4070f4;
+  color: blue;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
@@ -348,7 +348,7 @@
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #4070f4;
+  background-color: var(--seconda);
 }
 
 @media screen and (max-width: 768px) {
@@ -372,8 +372,8 @@
 
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked + label {
-  color: var(--primary);
-  border-color: var(--primary);
+  color: orangered;
+  border-color: orangered;
 }
 
 /*** Team ***/
@@ -409,14 +409,14 @@
 
 .team-item .team-social .btn {
   display: inline-flex;
-  color: var(--primary);
+  color: orangered;
   background: #ffffff;
   border-radius: 40px;
 }
 
 .team-item .team-social .btn:hover {
   color: #ffffff;
-  background: var(--primary);
+  background: orangered;
 }
 
 /*** Testimonial ***/
@@ -471,7 +471,7 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-  background: var(--primary);
+  background: orangered;
   transform: scale(1);
 }
 
@@ -485,7 +485,7 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item img {
-  background: var(--primary) !important;
+  background: orangered !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -509,7 +509,7 @@
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
   position: relative;
-  color: var(--primary);
+  color: orangered;
   font-size: 45px;
   transition: 0.5s;
 }
@@ -553,7 +553,7 @@
 }
 
 .footer .btn.btn-square:hover {
-  color: var(--secondary);
+  color: blue;
   border-color: var(--light);
 }
 
@@ -564,9 +564,9 @@
 }
 
 .footer .copyright a {
-  color: var(--secondary);
+  color: blue;
 }
 
 .footer .copyright a:hover {
-  color: var(--primary);
+  color: orangered;
 }
