@@ -14,6 +14,8 @@ import { ConseilComponent } from './components/conseil/conseil.component';
 import { FinanceComponent } from './components/finance/finance.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ArchivesComponent } from './components/archives/archives.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { ArchivesComponent } from './components/archives/archives.component';
     ConseilComponent,
     FinanceComponent,
     LoadingComponent,
-    ArchivesComponent
+    ArchivesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
