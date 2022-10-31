@@ -49,7 +49,8 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/bootstrap/dist/css/swiper-bundle.min.css"
+              "node_modules/bootstrap/dist/css/swiper-bundle.min.css",
+              "src/styles.scss"
             ],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js"]
           },

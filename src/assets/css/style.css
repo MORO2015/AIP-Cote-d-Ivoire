@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primar: #ff4500;
+  --primar: #ff4500 !important;
   --seconda: rgb(14, 14, 198);
   --secondary: #fff0e6;
   --light: #f8f8f9;
@@ -35,17 +35,17 @@
   transition: 0.5s;
 }
 
-.btn.btn-outline-primary {
+.btn.btn-outline-primar {
   color: var(--seconda);
 }
 
-/* .btn.btn-primary,
-.btn.btn-outline-primary:hover {
+/* .btn.btn-primar,
+.btn.btn-outline-primar:hover {
   color: #ffffff;
   background-color:  !im  border-color: var(--primar) !important;
 } */
 
-.btn.btn-primary:hover {
+.btn.btn-primar:hover {
   color: orangered !important;
   background: transparent;
 }
@@ -104,7 +104,7 @@
 
 /* .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--primary);
+  color: var(--primar);
 } */
 
 @media (max-width: 991.98px) {
@@ -190,6 +190,8 @@
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
   color: #999999;
+  text-align: center;
+  font-size: x-large;
 }
 
 /*** Causes ***/
@@ -217,7 +219,7 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  background: orangered;
+  background: orangered !important;
   color: #ffffff;
 }
 
@@ -316,14 +318,14 @@
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: orangered;
+  background-color: orangered !important;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button:hover {
-  background: orangered;
+  background: orangered !important;
 }
 
 .swiper-navBtn {
@@ -372,8 +374,8 @@
 
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked + label {
-  color: orangered;
-  border-color: orangered;
+  color: orangered !important;
+  border-color: orangered !important;
 }
 
 /*** Team ***/
@@ -409,14 +411,14 @@
 
 .team-item .team-social .btn {
   display: inline-flex;
-  color: orangered;
+  color: orangered !important;
   background: #ffffff;
   border-radius: 40px;
 }
 
 .team-item .team-social .btn:hover {
   color: #ffffff;
-  background: orangered;
+  background: orangered !important;
 }
 
 /*** Testimonial ***/

@@ -1,3 +1,14 @@
+.presentation {
+  align-items: center;
+}
+.description {
+  margin-left: 150px;
+}
+@media (min-width: 992px) {
+  .description {
+    margin-left: 0;
+  }
+}
 .texte {
   text-align: justify;
   font-size: 18px;
@@ -23,11 +34,20 @@
   font-weight: bold;
   color: green;
 }
+
 .card-aspere {
-  background-color: rgb(255, 239, 219);
+  background-color: rgb(255, 250, 219);
   height: 120px;
   margin-top: 15px;
   margin-bottom: 15px;
+  .card-title {
+    font-size: 24px;
+  }
+  .card-body {
+    .card-text {
+      font-size: 16px;
+    }
+  }
 }
 .coleur1 {
   color: orangered;
