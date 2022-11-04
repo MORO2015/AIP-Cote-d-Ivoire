@@ -4,25 +4,27 @@
     class="accueil-titre w-100 d-flex align-items-center justify-content-center"
   >
     <div class="message text-center">
-      <h2 class="text-white fw-bold">
-        <a
-          class="typewrite text-white text-decoration-none"
-          data-period="2000"
-          data-type='[ "Vous avez une idée ?", "Vous avez un projet?", "Vous avez déjà vos premiers clients ?" ]'
-        >
-          <span class="wrap"></span>
-        </a>
+      <h2
+        class="text-white fw-bold typewrite text-white text-decoration-none"
+        data-period="2000"
+        data-type='[ "Vous avez une idée ?", "Vous avez un projet?", "Vous avez déjà vos premiers clients ?" ]'
+      >
+        <span class="wrap"></span>
       </h2>
-      <h4 class="mt-3 text-white">
+      <h4 class="mt-3 text-white fw-bold">
         Faites-vous accompagner par nos experts et garantissez votre réussite !
       </h4>
-      <h6 class="mt-3 text-white">
-        <span class="text-africa">AFRICA INTEGRATION PARTNER</span> , le
-        partenaire de votre croissance !
-      </h6>
+      <h3 class="mt-3 text-white">
+        <h5 class="text-africa">
+          <span class="yello-color">AFRICA</span> &nbsp;
+          <span class="white-color">INTEGRATION</span> &nbsp;
+          <span class="blue-color">PARTNER</span>
+        </h5>
+        <p class="fw-3 fw-normal">le partenaire de votre croissance !</p>
+      </h3>
 
-      <a class="btn mt-5" href="#services">
-        <h5>Découvrez nos services</h5>
+      <a class="btn btn-primary p-3 fw-bold text-bg-dark" href="#services">
+        Découvrez nos services
       </a>
     </div>
   </div>
@@ -45,7 +47,7 @@
               style="object-fit: cover"
             />
             <img
-              class="position-absolute top-0 end-0 bg-white ps-2 pb-2"
+              class="position-absolute top-0 end-0 bg-white ps-2 pb-2 about-image"
               src="assets/img/bg/about2.jfif"
               alt=""
               style="width: 200px; height: 200px"
@@ -54,14 +56,9 @@
         </div>
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="h-100">
-            <div
-              class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-            >
-              A propos de nous
-            </div>
-            <h1 class="display-6 mb-5">
+            <h3 class="display-6 mb-5">
               Nous contribuons au developpement de l'Afrique
-            </h1>
+            </h3>
             <div
               class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4"
             >
@@ -80,13 +77,10 @@
               financement en passant par le renforcement des capacités du
               dirigeant.
             </p>
-            <a
-              class="btn btn-outline-primar py-2 px-3"
-              (click)="onRedirectionPropos()"
-            >
+            <a class="btn btn-special py-2 px-3" routerLink="/propos">
               En savoir plus de nous
               <div
-                class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-1"
+                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-1"
               >
                 <i class="fa fa-arrow-right fa-1x"></i>
               </div>
@@ -101,11 +95,6 @@
   <!--  -->
   <div class="container-xxl py-5">
     <div class="container">
-      <div
-        class="text-center mx-auto mb-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-        style="max-width: 500px"
-      ></div>
       <div class="row g-4 justify-content-center">
         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
@@ -182,7 +171,7 @@
               <div class="position-relative mt-auto">
                 <img class="img-fluid" src="assets/img/bg/conseil.jpg" alt="" />
                 <div class="causes-overlay">
-                  <a class="btn btn-outline-primary" routerLink="conseil">
+                  <a class="btn btn-outline-primary" routerLink="/conseil">
                     En savoir plus
                     <div
                       class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
@@ -207,7 +196,7 @@
                 </div>
                 <p class="texte">
                   Nos experts vous accompagnent dans la formation de vos équipes
-                  en fonction de vos problématiques et enjeux business.
+                  en fonction de vos problématiques et ...
                 </p>
               </div>
               <div class="position-relative mt-auto">
@@ -248,7 +237,7 @@
               <div class="position-relative mt-auto">
                 <img class="img-fluid" src="assets/img/bg/finance.jpg" alt="" />
                 <div class="causes-overlay">
-                  <a class="btn btn-outline-primary" routerLink="finance">
+                  <a class="btn btn-outline-primary" routerLink="/finance">
                     En savoir plus
                     <div
                       class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
@@ -267,7 +256,9 @@
 
   <!-- fin de Nos offres -->
   <div class="container">
-    <h3 class="text-center">Nous sommes actuellement présent</h3>
+    <h3 class="text-center pt-3 fw-bold fs-5">
+      Nous sommes actuellement présent
+    </h3>
     <div class="position-relative rounded overflow-hidden h-100">
       <iframe
         src="https://www.google.com/maps/d/u/0/embed?mid=1Pp6KYtG23PZT_T7o4Dha9GuFHGUSYDE&ehbc=2E312F"

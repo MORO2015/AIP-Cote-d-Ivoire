@@ -1,21 +1,67 @@
+@media (max-width: 720px) {
+  .accueil-titre {
+    background: url("../../../assets/img/bg/carousel2.jpg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .about-image {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
 .accueil-titre {
   padding: auto;
   height: 100vh;
   width: 100%;
   background: url("../../../assets/img/bg/carousel1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-size: 16px !important;
 }
 .texte {
   text-align: justify;
+  font-size: 18px;
 }
 .text-africa {
-  color: whitesmoke;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
+  .yello-color {
+    color: #ebdc0b;
+  }
+  .white-color {
+    color: white;
+  }
+  .blue-color {
+    color: #0e0ec6;
+  }
+}
+
+.btn-primary {
+  color: #0e0ec6 !important;
+  &:hover {
+    color: #ebdc0b !important ;
+  }
+}
+
+.btn-special {
+  background-color: #0e0ec6 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #ebdc0d;
+  border-color: #ebdc0d;
+  &:hover {
+    background-color: #0e0ec6 !important;
+    border-color: #0e0ec6 !important;
+    color: white !important;
+  }
 }
 
 .causes-item .progress .progress-bar span {
-  background: orangered !important;
+  background: #0e0ec6 !important;
 }

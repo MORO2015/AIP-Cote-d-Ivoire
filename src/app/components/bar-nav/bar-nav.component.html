@@ -1,10 +1,10 @@
 <!-- Navbar Start -->
 <nav
-  class="navbar container navbar-expand-lg bg-dark py-lg-0 px-lg-5 wow fadeIn sticky-top"
+  class="navbar container navbar-expand-lg bg-dark navbar-dark py-lg-0 px-lg-5 wow fadeIn sticky-top"
   data-wow-delay="0.1s"
 >
   <a routerLink="home" class="navbar-brand ms-4 ms-lg-0">
-    <img src="assets/img/logo/aip_logo.svg" alt="" srcset="" />
+    <img src="assets/img/logo/logo-couleur.png" alt="" srcset="" />
   </a>
   <button
     type="button"
@@ -21,14 +21,21 @@
         routerLink="home"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
-        >ACCUEIL</a
       >
-      <a routerLink="propos" class="nav-item nav-link" routerLinkActive="active"
-        >NOUS SOMMES</a
+        <span class="material-symbols-rounded"> home </span> ACCUEIL</a
+      >
+      <a
+        routerLink="propos"
+        class="nav-item nav-link"
+        routerLinkActive="active"
+      >
+        <span class="material-symbols-rounded"> contact_support </span> NOUS
+        SOMMES</a
       >
       <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-          >NOS SOLUTIONS</a
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+          <span class="material-symbols-rounded"> settings_suggest </span> NOS
+          SOLUTIONS</a
         >
         <div class="dropdown-menu m-0">
           <a
@@ -55,7 +62,9 @@
         routerLink="archives"
         class="nav-item nav-link"
         routerLinkActive="active"
-        >ARCHIVES</a
+      >
+        <span class="material-symbols-rounded"> auto_stories </span> NOS
+        ARCHIVES</a
       >
     </div>
     <div class="d-none d-lg-flex ms-2">

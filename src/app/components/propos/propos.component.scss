@@ -9,12 +9,22 @@
     margin-left: 0;
   }
 }
+@media (max-width: 750px) {
+  .texte {
+    margin-top: 30px;
+  }
+}
+.color-texte {
+  font-size: xx-large;
+  color: white;
+  font-weight: bolder;
+}
 .texte {
   text-align: justify;
-  font-size: 18px;
+  font-size: 20px;
 }
 .text-Africa {
-  color: orangered;
+  color: #ebdc0b;
   font-weight: bold;
 }
 
@@ -26,7 +36,7 @@
 }
 .name {
   font-weight: bold;
-  color: orangered;
+  color: #ebdc0b;
   font-size: 20px;
 }
 
@@ -37,7 +47,7 @@
 
 .card-aspere {
   background-color: rgb(255, 250, 219);
-  height: 120px;
+  height: 140px;
   margin-top: 15px;
   margin-bottom: 15px;
   .card-title {

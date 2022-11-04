@@ -1,78 +1,43 @@
 <!-- Page Header Start -->
-<div class="container page-header text-lg-center">
-  <h3 class="display-4 text-white">Contactez-nous</h3>
+<div class="container page-header d-fex justify-content-center">
+  <h3 class="text-center">Contactez nous 🤗 !</h3>
 </div>
 <!-- Page Header End -->
 <!-- Contact Start -->
-<div class="container py-5">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-        <h1 class="display-6 mb-3">Pour tous situations:</h1>
-        <p class="mb-4">
-          Nous sommes toujours prets à vous écoutez , aidez et accompagnez dans
-          votre quette
-        </p>
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
+<div class="container card py-5 m-auto wow fadeInUp" data-wow-delay="0.1s">
+  <div class="row d-flex align-items-center">
+    <div class="wrapper col-lg-6 col-sm-12 wow fadeIn" data-wow-delay="0.5s">
+      <header>Send us a Message</header>
+      <form action="https://formsubmit.co/mkouaelvis@gmail.com " method="POST">
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="name" placeholder="Entrez votre nom" />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              name="prenom"
+              placeholder="Entrez votre prénom"
+            />
+            <i class=""></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="phone" placeholder="Entrez notre numéro" />
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Entrez votre email" />
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <div class="col-6 w-100">
               <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nom"
-                  placeholder="Votre nom"
-                />
-                <label for="nom">Votre nom *</label>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="text"
-                  placeholder="Votre Prénom"
-                />
-                <label for="prenom"> Votre prénom *</label>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-floating">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Votre email"
-                />
-                <label for="email">Email *</label>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-floating">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="numero"
-                  placeholder="numero"
-                />
-                <label for="email">Numéro *</label>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="societe"
-                  placeholder="societe"
-                />
-                <label for="sociéte">société *</label>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-floating">
-                <select class="form-control" id="fonction">
+                <select class="form-control" name="fonction" id="fonction">
                   <option value="aucun">---</option>
                   <option value="Entrepreneur">Entrepreneur</option>
                   <option value=" Fonction">Fonctionnaire</option>
@@ -81,9 +46,15 @@
                 <label for="email">Fonction *</label>
               </div>
             </div>
-            <div class="col-6">
+          </div>
+          <div class="field">
+            <div class="col-6 w-100">
               <div class="form-floating">
-                <select class="form-control" id="comment">
+                <select
+                  class="form-control"
+                  name="comment aviez entendu parler de nous"
+                  id="comment"
+                >
                   <option value="aucun">---</option>
                   <option value="Seminaire">seminaire</option>
                   <option value="Facebook">Facebook</option>
@@ -98,49 +69,73 @@
                 >
               </div>
             </div>
-            <div class="col-12">
-              <div class="form-floating">
-                <textarea
-                  class="form-control"
-                  placeholder="Message"
-                  id="message"
-                  style="height: 100px"
-                ></textarea>
-                <label for="message">Message</label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary py-2 px-3 me-3">
-                Envoyer de message
-                <div
-                  class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-                >
-                  <i class="fa fa-arrow-right"></i>
-                </div>
-              </button>
-            </div>
           </div>
-        </form>
-      </div>
-      <div
-        class="col-lg-6 wow fadeIn"
-        data-wow-delay="0.5s"
-        style="min-height: 450px"
-      >
-        <p class="text-info">Notre position géographique</p>
-        <div class="position-relative rounded overflow-hidden h-100">
-          <iframe
-            src="https://www.google.com/maps/d/u/0/embed?mid=1Pp6KYtG23PZT_T7o4Dha9GuFHGUSYDE&ehbc=2E312F"
-            width="650"
-            height="480"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
+        <div class="message">
+          <textarea
+            placeholder="Ecrivez votre message ici"
+            name="message"
+          ></textarea>
+          <i class="material-icons"></i>
+        </div>
+        <div class="button-area">
+          <button
+            type="submit"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Envoyez-nous un message
+          </button>
+          <span></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-lg-6 wow fadeIn h-100" data-wow-delay="0.5s">
+      <div class="position-relative rounded overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1Pp6KYtG23PZT_T7o4Dha9GuFHGUSYDE&ehbc=2E312F"
+          width="100%"
+          height="570"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   </div>
 </div>
 <!-- Contact End -->
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModalCenter"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,22 @@
 .active {
   font-weight: bold;
-  color: orangered !important;
+  color: #ebdc0d !important;
+}
+.navbar-toggler + .navbar-toggler-icon {
+  color: #ebdc0d !important;
+  background-color: #ebdc0d !important;
+}
+.fixed-top {
+  background-color: dark !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #ebdc0d;
+  border-color: #ebdc0d;
+  &:hover {
+    background-color: #0e0ec6 !important;
+    border-color: #0e0ec6 !important;
+    color: white !important;
+  }
 }

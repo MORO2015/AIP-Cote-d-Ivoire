@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-  --primar: #ff4500 !important;
-  --seconda: rgb(14, 14, 198);
+  --primar: rgb(14, 14, 198) !important;
+  --seconda: #ebdc0b;
   --secondary: #fff0e6;
   --light: #f8f8f9;
   --dark: #001d23;
@@ -46,7 +46,7 @@
 } */
 
 .btn.btn-primar:hover {
-  color: orangered !important;
+  color: rgb(14, 14, 198) !important;
   background: transparent;
 }
 
@@ -76,9 +76,9 @@
 }
 
 /*** Navbar ***/
-.fixed-top {
+/* .fixed-top {
   transition: 0.5s;
-}
+} */
 
 .top-bar {
   height: 45px;
@@ -219,7 +219,7 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  background: orangered !important;
+  background: #0e0ec6 !important;
   color: #ffffff;
 }
 
@@ -271,7 +271,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: #0e0ec6;
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -282,7 +282,7 @@
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: blue;
+  background-color: #0e0ec6;
 }
 .overlay::after {
   border-radius: 0 25px 0 0;
@@ -318,14 +318,14 @@
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: orangered !important;
+  background-color: rgb(14, 14, 198) !important;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button:hover {
-  background: orangered !important;
+  background: rgb(14, 14, 198) !important;
 }
 
 .swiper-navBtn {
@@ -333,7 +333,7 @@
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover {
-  color: blue;
+  color: #0e0ec6;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
@@ -374,8 +374,8 @@
 
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked + label {
-  color: orangered !important;
-  border-color: orangered !important;
+  color: rgb(14, 14, 198) !important;
+  border-color: rgb(14, 14, 198) !important;
 }
 
 /*** Team ***/
@@ -411,14 +411,14 @@
 
 .team-item .team-social .btn {
   display: inline-flex;
-  color: orangered !important;
+  color: rgb(14, 14, 198) !important;
   background: #ffffff;
   border-radius: 40px;
 }
 
 .team-item .team-social .btn:hover {
   color: #ffffff;
-  background: orangered !important;
+  background: rgb(14, 14, 198) !important;
 }
 
 /*** Testimonial ***/
@@ -473,7 +473,7 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-  background: orangered;
+  background: rgb(14, 14, 198);
   transform: scale(1);
 }
 
@@ -487,7 +487,7 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item img {
-  background: orangered !important;
+  background: rgb(14, 14, 198) !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -511,7 +511,7 @@
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
   position: relative;
-  color: orangered;
+  color: rgb(14, 14, 198);
   font-size: 45px;
   transition: 0.5s;
 }
@@ -555,7 +555,7 @@
 }
 
 .footer .btn.btn-square:hover {
-  color: blue;
+  color: #0e0ec6;
   border-color: var(--light);
 }
 
@@ -566,9 +566,9 @@
 }
 
 .footer .copyright a {
-  color: blue;
+  color: #0e0ec6;
 }
 
 .footer .copyright a:hover {
-  color: orangered;
+  color: #ebdc0b;
 }

@@ -1,3 +1,13 @@
+.img-card {
+  background-color: #f4f3ef;
+  border-radius: 6px;
+}
+.text-center {
+  font-size: xx-large;
+  color: white;
+  font-weight: bolder;
+}
+
 .bg {
   background-color: rgb(250, 253, 249);
   border-radius: 10px;
@@ -15,7 +25,7 @@
   text-align: justify;
 }
 .material-symbols-outlined {
-  color: green;
+  color: #0e0ec6;
 }
 .btn-primary {
   justify-content: center;
@@ -24,12 +34,26 @@
   align-items: center;
   width: 300px;
 }
+.btn-primary {
+  background-color: #0e0ec6;
+  color: #ebdc0b;
+  font-size: 20px;
+}
 .bouton {
   margin: O auto;
   text-align: center;
-  color: white;
+  color: #ebdc0b !important;
   :hover {
     color: dark;
     cursor: pointer;
+  }
+}
+.w-100 {
+  font-size: 20px;
+}
+@media (max-width: 720px) {
+  .w-100 {
+    margin-top: 30px;
+    font-size: 16px;
   }
 }
